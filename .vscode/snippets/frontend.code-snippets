@@ -1,0 +1,63 @@
+{
+  "React Native Component": {
+    "prefix": "rncomp",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text, StyleSheet } from 'react-native';",
+      "",
+      "const $1 = () => {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <Text>$1 Screen</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    justifyContent: 'center',",
+      "    alignItems: 'center'",
+      "  }",
+      "});",
+      "",
+      "export default $1;"
+    ],
+    "description": "React Native Functional Component"
+  },
+
+  "API Call Hook": {
+    "prefix": "api",
+    "body": [
+      "import axios from 'axios';",
+      "",
+      "export const $1Api = async (payload) => {",
+      "  try {",
+      "    const response = await axios.$2('http://localhost:4000/$3', payload);",
+      "    return response.data;",
+      "  } catch (error) {",
+      "    console.log('API Error →', error.message);",
+      "    throw error;",
+      "  }",
+      "};"
+    ],
+    "description": "React Native API call snippet"
+  },
+
+  "React Navigation Screen": {
+    "prefix": "rnscreen",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text } from 'react-native';",
+      "",
+      "export default function $1({ navigation }) {",
+      "  return (",
+      "    <View>",
+      "      <Text>$1 Screen</Text>",
+      "    </View>",
+      "  );",
+      "}"
+    ],
+    "description": "Screen template with navigation"
+  }
+}
